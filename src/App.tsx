@@ -1,5 +1,3 @@
-"use client";
-import { cn } from "./util/cn";
 import { useState } from "react";
 import {
   IconBrandYoutube,
@@ -14,6 +12,7 @@ import { About } from "./components/about";
 import { Footer } from "./components/footer";
 import { FAQs } from "./components/faqs";
 import { Wedding } from "./components/wedding";
+import { cn } from "./util/cn";
 
 export default function Home() {
   const [section, setSection] = useState("wed");
@@ -53,7 +52,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex relative justify-center align-middle p-5 bg-yellow-50">
+      <div className="flex relative justify-center align-middle sm:p-5 bg-yellow-50">
         <div className="container max-w-screen-xl">
           <h1 className="text-6xl text-center font-serif m-10">Work</h1>
           <div className="flex justify-center align-middle">
@@ -107,7 +106,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="h-screen py-5 w-full">
+          <div className="py-5 w-full">
             {section === "wed" && <Wedding />}
             {section === "com" && <Commercial />}
             {section === "travel" && <Travel />}

@@ -1,4 +1,9 @@
 import { LayoutGrid } from "./layout-grid";
+import wed1 from "../assets/images/sample/wedding1.jpeg";
+import wed2 from "../assets/images/sample/wedding2.jpg";
+import wed3 from "../assets/images/sample/wedding3.jpeg";
+import wed4 from "../assets/images/sample/wedding4.jpeg";
+import wed5 from "../assets/images/sample/wedding5.jpg";
 
 export const Wedding = () => {
   return <LayoutGrid cards={cards} />;
@@ -91,30 +96,30 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail: "../src/assets/images/sample/wedding1.jpeg",
+    thumbnail: wed1,
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "../src/assets/images/sample/wedding2.jpg",
+    thumbnail: wed2,
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: "../src/assets/images/sample/wedding3.jpeg",
+    thumbnail: wed3,
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "col-span-1",
-    thumbnail: "../src/assets/images/sample/wedding4.jpeg",
+    thumbnail: wed4,
   },
   {
     id: 5,
     content: <SkeletonFive />,
     className: "col-span-1",
-    thumbnail: "../src/assets/images/sample/wedding5.jpg",
+    thumbnail: wed5,
   },
 ];

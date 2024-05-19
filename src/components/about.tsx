@@ -1,10 +1,12 @@
+import User from "../assets/images/tushar.jpeg";
+
 export const About = () => {
   return (
     <div className="flex flex-col sm:flex-row gap-10 mt-20">
       <div className="flex relative justify-center rounded-full">
         <div className="border-4 -top-10 -left-10 border-yellow-300 border-solid absolute h-[100%] w-[360px] z-20 hidden sm:flex rounded-lg" />
         <img
-          src="../src/assets/images/tushar.jpeg"
+          src={User}
           width={360}
           height={100}
           alt="me"
